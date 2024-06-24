@@ -1,0 +1,16 @@
+package boundaryOfLaws.models;
+
+public class EndUser {
+	private int id;
+	private String name;
+	private String email;
+	private String password;
+	private String phone;
+	private String NRC;
+	private String current_state;
+	private String gender;
+	private String cases;
+	private String type;
+	
+	
+}
