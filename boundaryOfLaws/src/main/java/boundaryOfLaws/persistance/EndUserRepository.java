@@ -21,7 +21,7 @@ public class EndUserRepository {
 	// insert
 	public int add(EndUser enduser) {
 		int result = 0;
-		String sql = "INSERT INTO enduser(name,email,password,phone,NRC,current_state,gender,cases,type)VALUES(?,?,?,?,?,?,?,?,?)";
+		String sql = "INSERT INTO endUser(name,email,password,phone,NRC,current_state,gender,cases,type)VALUES(?,?,?,?,?,?,?,?,?)";
 
 		try {
 			PreparedStatement ps = con.prepareStatement(sql);
@@ -49,7 +49,7 @@ public class EndUserRepository {
 	// Update
 	public int edit(EndUser enduser) {
 		int result = 0;
-		String sql = "UPDATE  enduser SET name=?,email=?,password=?,phone=?,NRC=?,current_state=?,gender?,cases=?,type=?,where id=";
+		String sql = "UPDATE  endUser SET name=?,email=?,password=?,phone=?,NRC=?,current_state=?,gender?,cases=?,type=?,where id=";
 
 		try {
 			PreparedStatement ps = con.prepareStatement(sql);
@@ -80,7 +80,7 @@ public class EndUserRepository {
 //delete
 	public int delete(int id) {
 		int result = 0;
-		String sql = "DELETE FROM enduser WHERE id=?";
+		String sql = "DELETE FROM endUser WHERE id=?";
 
 		try {
 			PreparedStatement ps = con.prepareStatement(sql);
@@ -99,7 +99,7 @@ public class EndUserRepository {
 	public List<EndUser> getAll() {
 		
 		List<EndUser> endusers = new ArrayList<>();
-		String sql = "SELECT *FROM author";
+		String sql = "SELECT *FROM endUser";
 
 		try {
 			PreparedStatement ps = con.prepareStatement(sql);
@@ -132,7 +132,7 @@ public class EndUserRepository {
 
 	public EndUser getById(int id) {
 		EndUser enduser = null;
-		String sql = "SELECT *FROM enduser WHERE id=?";
+		String sql = "SELECT *FROM endUser WHERE id=?";
 		try {
 			PreparedStatement ps = con.prepareStatement(sql);
 			ps.setInt(1, id);
