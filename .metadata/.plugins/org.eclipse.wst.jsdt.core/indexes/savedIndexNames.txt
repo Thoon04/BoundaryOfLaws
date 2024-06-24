@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Boundary of Laws\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+4115285848.index
+4274914526.index
+1386619788.index
+799881653.index
+999080077.index
+2490023930.index
